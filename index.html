@@ -6,7 +6,6 @@
         :root {
             /*COLORS*/
             --background: #121213;
-            --buttonGrey: #121213;
             --white: #ffffff;
             --keyGrey: #818384;
             --yellowButton: #b59f3b;
@@ -16,6 +15,7 @@
         body {
             background: var(--background);
             color: var(--white);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         h1 {
@@ -45,6 +45,7 @@
             width: 80px;
             height: 80px;
             background-color: var(--background);
+            color: transparent;
             border: rgb(82, 82, 82) solid;
             font-size: 40px;
             font-weight: bold;
@@ -92,6 +93,18 @@
         .wide {
             width: 80px;
         }
+
+        .green {
+            border: 0px;
+            color: var(--white);
+            background-color: var(--greenButton);
+        }
+
+        .yellow {
+            border: 0px;
+            color: var(--white);
+            background-color: var(--yellowButton);
+        }
     </style>
 </head>
 
@@ -99,63 +112,63 @@
 
     <h1>Wordle</h1>
     <div class="grid">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
+        <div class="grid-item green">H</div>
+        <div class="grid-item green">E</div>
+        <div class="grid-item green">L</div>
+        <div class="grid-item green">L</div>
+        <div class="grid-item green">O</div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item yellow"></div>
+        <div class="grid-item"></div>
     </div>
 
     <div class="keyBoard">
         <ol>
             <div class="keyBoardRow top">
-                <div class="key">1</div>
-                <div class="key">2</div>
-                <div class="key">3</div>
-                <div class="key">4</div>
-                <div class="key">5</div>
-                <div class="key">1</div>
-                <div class="key">2</div>
-                <div class="key">3</div>
-                <div class="key">4</div>
-                <div class="key">5</div>
+                <div class="key">Q</div>
+                <div class="key">W</div>
+                <div class="key">E</div>
+                <div class="key">R</div>
+                <div class="key">T</div>
+                <div class="key">Y</div>
+                <div class="key">U</div>
+                <div class="key">I</div>
+                <div class="key">O</div>
+                <div class="key">P</div>
             </div>
 
             <div class="keyBoardRow middle">
-                <div class="key">1</div>
-                <div class="key">2</div>
-                <div class="key">3</div>
-                <div class="key">4</div>
-                <div class="key">5</div>
-                <div class="key">1</div>
-                <div class="key">2</div>
-                <div class="key">3</div>
-                <div class="key">4</div>
+                <div class="key">A</div>
+                <div class="key">S</div>
+                <div class="key">D</div>
+                <div class="key">F</div>
+                <div class="key">G</div>
+                <div class="key">H</div>
+                <div class="key">J</div>
+                <div class="key">K</div>
+                <div class="key">L</div>
             </div>
 
             <div class="keyBoardRow bottom">
