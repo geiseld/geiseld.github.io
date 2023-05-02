@@ -18,9 +18,24 @@ html, body{
 
     padding: 0px;
     height: 100%;
+
+    background-image: url(images/sunset-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 .header {
     font-size: 30px;
     background-color: var(--backgroundDark);
+    margin-bottom: 80px;
+}
+
+.content {
+    background-color: rgba(32, 35, 38, 0.8);
+
+    border-radius: 5px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
 }
