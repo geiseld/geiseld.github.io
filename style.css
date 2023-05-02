@@ -1,0 +1,20 @@
+:root {
+    /*COLORS*/
+    --backgroundDark: #141414;
+    --backgroundLight: #202326;
+    --text: #f5f6f7;
+    --elementBackground: #3d4c5d;
+    /**/
+
+}
+
+.root {
+    background-color: var(--backgroundLight);
+    color: var(--text);
+    padding: 0;
+    min-height: 100vw;
+}
+
+.header {
+    background-color: var(--backgroundDark);
+}
