@@ -27,7 +27,6 @@ html, body{
 div #header {
     font-size: 30px;
     background-color: var(--backgroundDark);
-    margin-bottom: 80px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -37,12 +36,16 @@ div #header {
     line-height: 32px;
 }
 
-.content-box {
+.box-content {
     background-color: rgba(32, 35, 38, 0.8);
 
     border-radius: 0px 0px 5px 5px;
     padding: 10px;
     backdrop-filter: blur(10px);
+}
+
+.display-box {
+    margin-top: 10px;
 }
 
 .box-title {
@@ -51,4 +54,8 @@ div #header {
     background-color: rgba(32, 35, 38, 1);
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.glow-effect:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
