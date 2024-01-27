@@ -38,22 +38,31 @@ div #header {
 
 .box-content {
     background-color: rgba(32, 35, 38, 0.8);
-
     border-radius: 0px 0px 5px 5px;
     padding: 10px;
     backdrop-filter: blur(10px);
 }
 
-.display-box {
-    margin-top: 10px;
+.box-content a{
+    display: block;
+    
 }
 
-.box-title {
+.display-box {
+    width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.box-title{
     font-size: 1.5rem;
-    border-radius: 5px 5px 0px 0px;
     background-color: rgba(32, 35, 38, 1);
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.box-title.top{
+    border-radius: 5px 5px 0px 0px;
 }
 
 .glow-effect:hover {
