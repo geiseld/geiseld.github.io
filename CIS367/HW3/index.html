@@ -30,7 +30,29 @@
         const renderer = new THREE.WebGLRenderer()
         renderer.setSize(window.innerWidth, window.innerHeight)
         document.body.appendChild(renderer.domElement)
-        renderer.setClearColor(0xFF0066)
+        renderer.setClearColor(0xC6F0F5)
+
+        //Add floor
+        let floorWidth = 20
+        let floorHeight = 40
+        let floorGeometry = new THREE.PlaneGeometry(floorWidth, floorHeight)
+        let floorMaterial = new THREE.MeshStandardMaterial({color: 0x09900})
+        let floorMesh = new THREE.Mesh(floorGeometry, floorMaterial)
+
+        //Rotate plane so it is flat
+        floorMesh.position.set(0,-1,-3)
+        floorMesh.rotation.set(-Math.PI2,0,0)
+        scene.add(floorMesh)
+
+        //Add box
+        let boxWidth = 1
+        let boxHeight = 2
+        let boxDepth = 1
+        let boxGeometry = new THREE.BoxGeometry(boxWidth, boxHeight, boxDepth)
+        let boxMaterial = new THREE.MeshStandardMaterial( { color: 0x00ffff })
+        let boxMesh = new THREE.Mesh(boxGeometry, boxMaterial)
+        boxMesh.position.set(-2, 1, -5)
+        scene.add(boxMesh)
 
         function animate(){
             requestAnimationFrame(animate)
