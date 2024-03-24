@@ -85,12 +85,7 @@
         }
         
         let torusGeo = new THREE.TorusGeometry(1, 0.25, 20, 40);
-        let funnyImage = textureLoader.load('burgcowboy.jpg')
-        let torusMat = new THREE.MeshStandardMaterial({
-            map: funnyImage,
-            metalness: 0.3,
-            roughness: 0
-        })
+        let torusMat = new THREE.MeshStandardMaterial( { color: 0xFFFFFF } );
         let torusMesh = new THREE.Mesh(torusGeo, torusMat)
         torusMesh.position.set(0,0,-0.5);
         scene.add(torusMesh)
