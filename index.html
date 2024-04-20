@@ -27,7 +27,13 @@
 </head>
 
 <body>
+
     <div id="root" class="container-fluid">
+
+        <video autoplay muted loop id="backgroundVid" poster="assets/projectFrame1.png">
+            <source src="./CIS367/termProject/DavidGeiselProjectVideo.webm" type="video/webm">
+        </video>
+
         <nav id="header" class="navbar">
             <span class="header-text">David Geisel</span>
             <a class="glow-effect" href="https://github.com/geiseld" style="display: block;">
@@ -37,13 +43,13 @@
 
         <div class="container page-content">
             <div class="display-box">
-                <div class="box-title top container-fluid">
+                <div class="box-title top container-fluid col-sm">
                     <span>CIS367 Projects/Homework</span>
                 </div>
                 <div class="box-content col-sm">
-                    <a href="./CIS367/Gasket/gasket1-geisel.html">Sierpinski Gasket 1</a>
-                    <a href="./CIS367/Triangle/index.html">Triangle</a>
-                    <a href="./CIS367/HW2.1 Interaction & Animation/triangle-interact.html">Interactive Triangle</a>
+                    <a class="block" href="./CIS367/Gasket/gasket1-geisel.html">Sierpinski Gasket 1</a>
+                    <a class="block" href="./CIS367/Triangle/index.html">Triangle</a>
+                    <a class="block" href="./CIS367/HW2.1 Interaction & Animation/triangle-interact.html">Interactive Triangle</a>
                     <div class="box-subsection">
                         <a class="box-subtitle" data-toggle="collapse" href="#sub1" aria-expanded="false" aria-controls="sub1">
                             Lab 2.2
@@ -53,21 +59,48 @@
                         </a>
                         <div class="collapse" id="sub1">
                             <div>
-                                <a href="./CIS367/2.2/triangle-anim.html">Bounded Triangle</a>
-                                <a href="./CIS367/2.2/triangle-rotate.html">Rotating Triangle</a>
-                                <a href="./CIS367/2.2/gasket5-copy.html">Movable Gasket</a>
+                                <a class="block" href="./CIS367/2.2/triangle-anim.html">Bounded Triangle</a>
+                                <a class="block" href="./CIS367/2.2/triangle-rotate.html">Rotating Triangle</a>
+                                <a class="block" href="./CIS367/2.2/gasket5-copy.html">Movable Gasket</a>
                             </div>
                         </div>
                     </div>
-                    <a href="./CIS367/HW3/index.html">HW3: Other Libraries</a>
-                    <a href="./CIS367/HW3/phaserTest.html">HW3: Phaser "Thing"</a>
+
+                    <a class="block" href="./CIS367/HW3/index.html">HW3: Other Libraries</a>
+
+                    <a class="block" href="./CIS367/HW3/phaserTest.html">HW3: Phaser "Thing"</a>
+
+                    <div class="box-subsection">
+                        <a class="box-subtitle" data-toggle="collapse" href="#sub2" aria-expanded="false" aria-controls="sub1">
+                            Term Project
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                              </svg>
+                        </a>
+                        <div class="collapse" id="sub2">
+                            <div>
+                                <p> &emsp; I used this project as an opportunity to learn the basics of Blender, 
+                                    and to make an animated version of one of my favorite wallpapers. <br>
+                                    The end result (the background on this site!) is a sun object with boolean cutouts that continually loop an animation, creating a vaporwave effect.  <br>
+                                    Additionally, I used geometry nodes to create all the textures in the scene, 
+                                    most notably on the sun and the space background. <br>
+                                    The project can be downloaded as the 
+                                    <a href="./CIS367/termProject/DavidGeiselProjectVideo.webm" download>rendered animation</a> 
+                                    in .webm format, or as the 
+                                    <a href="./CIS367/termProject/vaporwaveScene.blend" download="DavidGeisel367Project">.blend file</a>. 
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <div class="container page-content">
             <div class="display-box">
-                <div class="box-title top container-fluid">
+                <div class="box-title top container-fluid col-sm">
                     <span>Other Projects</span>
                 </div>
                 <div class="box-content col-sm">

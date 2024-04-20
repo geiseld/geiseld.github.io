@@ -7,21 +7,32 @@
     /**/
 }
 
-html, body{
+html,
+body {
     height: 100%
 }
 
 #root {
+
     background-color: var(--backgroundLight);
     color: var(--text);
 
     padding: 0px;
     height: 100%;
 
-    background-image: url(assets/sunset-bg.jpg);
+    /*background-image: url(assets/sunset-bg.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+}
+
+#backgroundVid {
+    min-width: 100%;
+    min-height: 130%;
+    position: fixed;
+    bottom: -20%;
+    right: 0;
+    transform: translateX(calc((100% - 100vw) / 2));
 }
 
 div #header {
@@ -43,9 +54,9 @@ div #header {
     backdrop-filter: blur(10px);
 }
 
-.box-content a{
+.box-content a.block {
     display: block;
-    
+
 }
 
 .display-box {
@@ -54,7 +65,7 @@ div #header {
     display: inline-block;
 }
 
-.box-title{
+.box-title {
     font-size: 1.5rem;
     background-color: rgba(32, 35, 38, 1);
     padding-top: 5px;
@@ -71,7 +82,7 @@ div #header {
     backdrop-filter: blur(10px);
 }
 
-.box-title.top{
+.box-title.top {
     border-radius: 5px 5px 0px 0px;
 }
 
